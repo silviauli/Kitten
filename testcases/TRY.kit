@@ -1,0 +1,36 @@
+class TRY {
+    field int val
+    field String msg
+    
+    test pluto
+        assert(1 = 1)
+    
+    test pippo
+        assert((2 + 2) = 5)
+
+    constructor(){}
+  /*  
+    fixture
+        this.msg := "TRY PASSED!!"
+    */    
+    method void direCiao()
+        "Ciao".output()
+    
+    method void setMsg(String message)
+        this.msg := message
+       
+    method void setVal(int val)
+        this.val := val 
+    
+    method void sayTRY()
+        this.msg.output()
+
+    method void main(){
+    TRY try := new TRY();
+    try.msg := "ciao";
+    "tutto ok!\n".output()
+
+    }
+    
+        
+}
